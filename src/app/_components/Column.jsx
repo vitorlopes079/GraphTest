@@ -3,7 +3,10 @@ import React from 'react';
 const Column = ({ month, value, height, selected, onClick }) => {
   return (
     <div className='column-container' onClick={() => onClick(month)}>
-      <div className="price-tag" style={{ opacity: selected ? 1 : 0, visibility: selected ? 'visible' : 'hidden' }}>
+      <div className="price-tag" style={{
+          opacity: selected ? 1 : 0, // This will control the opacity based on selection
+          visibility: selected ? 'visible' : 'hidden' // Controls visibility based on selection
+        }}>
         {value}
         <div className="tooltip-dots">
           <div className='dot'></div>

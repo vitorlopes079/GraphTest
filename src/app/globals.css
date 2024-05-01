@@ -68,15 +68,15 @@ main {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 32px;
   font-weight: 500;
+  transition: opacity 0.3s ease, visibility 0.3s ease; 
   opacity: 0;  
-  transition: opacity 0.3s ease; 
   visibility: hidden; 
 }
 
 .column-container:hover .price-tag,
-.column-container:focus .price-tag {
-  opacity: 1; 
-  visibility: visible; 
+.column-container.selected .price-tag {
+  opacity: 1 !important; 
+  visibility: visible !important; 
 }
 
 .tooltip-dots {
