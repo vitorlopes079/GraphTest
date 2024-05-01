@@ -81,7 +81,7 @@ main {
 
 .tooltip-dots {
   position: absolute;
-  bottom: -30px; 
+  bottom: -28px; 
   left: 50%;
   transform: translateX(-50%);
   font-size: 25px;
@@ -98,7 +98,7 @@ main {
   width: 4px;
   border-radius: 50%;
   background-color: #f4f4f5;
-  margin: 2.5px 0;
+  margin: 3px 0;
 }
 
 p {
